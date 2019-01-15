@@ -7,16 +7,13 @@
     margin: auto;
  text-align: center;
 	padding: 10px;
-	
-.left {
-    margin: auto;
- text-align: left;
-	padding: 10px;
-	
-.right {
-    margin: auto;
- text-align: right;
-	padding: 10px;
+
+.cities {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
 </style>
 </head>
 <body>
@@ -40,35 +37,35 @@
 </div>
 <br>
 
- <div class="center">
-<table>
-  <tr>
-    <th>Server Notebook</th>
-    <th>Server Desktop</th> 
-    <th>Server FTP</th>
-  </tr>
-  <tr>
-    <td>
+ 
+	<div class="cities">
+	<h2>Acesso remoto Notebook</h2>
 		<a href="remote/notebook.RDP"><img src="remote/remote.png" title="Notebook" width="50" height="50" /></a>
-		<p> Usuário: Administrador</p>
-		<p> Senha: lcap2019</p>
- 	</td>
-    <td>
+			<ul>
+				<li> Usuário: Administrador</li>
+				<li> Senha: lcap2019</li>
+			</ul>
+	</div>
+ 	
+	<div class="cities">
+	<h2>Acesso remoto Desktop</h2>
 		<a href="remote/desktop.RDP"><img src="remote/remote.png" title="Desktop" width="50" height="50" /></a> 
-
-	</td>
-    <td>
+			<ul>
+			<li> Usuário: LCAP</li>
+			<li> Senha: lcap2019</li>
+		</ul>
+	</div>
+	
+	<div class="cities">
+		<h2>Acesso remoto FTP e informações para teste</h2>
 		<a href="ftp://lcap:lcap@192.168.15.25/"><img src="remote/ftp.png" title="FTP" width="50" height="50" /></a>
-		
-		<p> - IP: 192.168.15.25 </p>
-		<p> - Porta: 21</p>
-		<p> - Usuário: lcap</p>
-		<p> - Senha: lcap</p>
-	</td>
-
-  </tr>
-</table>
-</div>
+			<ul>
+				<li>IP: 192.168.15.25 </li>
+				<li>Porta: 21</li>
+				<li>Usuário: lcap</li>
+				<li>Senha: lcap</li>
+			</ul>
+	</div>
 
  
 
