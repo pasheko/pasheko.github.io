@@ -3,17 +3,14 @@
 <head>
  <meta charset="UTF-8"> 
 <style>
+td {
+  text-align: left;
+}
+
 .center {
     margin: auto;
  text-align: center;
-	padding: 10px;
 
-.cities {
-  background-color: black;
-  color: white;
-  margin: 20px;
-  padding: 20px;
-}
 </style>
 </head>
 <body>
@@ -37,9 +34,48 @@
 </div>
 <br>
 
- 
+
+<table class="center" cellspacing="0" border="1" frame="vsides">
+
+	<tr>
+    	<th colspan="3">Acesso remoto</th>
+	</tr>
+	<tr>
+		<th>
+			<a href="remote/notebook.RDP"><img src="remote/notebook.png" title="Notebook" width="100" height="100" /></a>
+		</th>
+		<th>
+			<a href="remote/desktop.RDP"><img src="remote/desktop.png" title="Desktop" width="50" height="70" /></a> 
+		</th>
+		<th>
+			<a href="ftp://lcap:lcap@192.168.15.25/"><img src="remote/ftp.png" title="FTP" width="50" height="50" /></a>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<ul>
+				<li> Usuário:Administrador</li>
+				<li> Senha:lcap2019</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+				<li> Usuário:LCAP</li>
+				<li> Senha:lcap2019</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+				<li>IP: 192.168.15.25 </li>
+				<li>Porta: 21</li>
+			</ul>
+		</td>
+	</tr>
+</table>
+
+<!--
 	<div class="cities">
-	<h2>Acesso remoto Notebook</h2>
+	<h3>Acesso remoto Notebook</h3>
 		<a href="remote/notebook.RDP"><img src="remote/remote.png" title="Notebook" width="50" height="50" /></a>
 			<ul>
 				<li> Usuário: Administrador</li>
@@ -47,8 +83,8 @@
 			</ul>
 	</div>
  	
-	<div class="cities">
-	<h2>Acesso remoto Desktop</h2>
+	<div>
+	<h3>Acesso remoto Desktop</h3>
 		<a href="remote/desktop.RDP"><img src="remote/remote.png" title="Desktop" width="50" height="50" /></a> 
 			<ul>
 			<li> Usuário: LCAP</li>
@@ -56,8 +92,8 @@
 		</ul>
 	</div>
 	
-	<div class="cities">
-		<h2>Acesso remoto FTP e informações para teste</h2>
+	<div>
+		<h3>Acesso remoto FTP e informações para teste</h3>
 		<a href="ftp://lcap:lcap@192.168.15.25/"><img src="remote/ftp.png" title="FTP" width="50" height="50" /></a>
 			<ul>
 				<li>IP: 192.168.15.25 </li>
@@ -66,8 +102,8 @@
 				<li>Senha: lcap</li>
 			</ul>
 	</div>
+-->
 
- 
 
 </body>
 </html>
