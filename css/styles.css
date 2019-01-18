@@ -9,11 +9,19 @@ body {
   margin: 0;
 }
 
+/* body .a {
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+	margin: 0px;
+	width: 1440px;
+	height: 782px;} */
+
 /* Header/logo Title */
 .header {
   padding: 5px;
   text-align: center;
-  background: white;
+  background: 0;
   color: #52a753;
 }
 .header img {
@@ -69,12 +77,13 @@ left:3%;
 .main {   
 	-ms-flex: 70%; /* IE10 */
 	flex: 70%;
-	background-color: white;
+	background-color: 0;
 	padding: 50px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	 margin-bottom: 10px;
+	margin-top: 10px; 
 	text-align: center;
 }
+
 
 /* Footer */
 .footer {
