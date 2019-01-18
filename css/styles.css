@@ -110,3 +110,18 @@ body {
     width: 100%;
   }
 }
+
+
+.header-logo-default {
+
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAeCAMAAACMnWmDAAACOlBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9Oi5STAAAAvXRSTlMAHOMEArYG5/j3CvsDDPb6KNv+JAGqjbH9/Mx79PNK4SnNX4M9xjdd+WCYFNKhy1YYtX9ZkdzxQ3XQSQ5zIBvqKjC45cUsHqmcDXRhEbymD6JaZegFTKyllZnYeIDaI/Xe68fp0zziCXInJS5Fl+2CiNQdIu6EjESLwHarVGbROKTCyXlizrKabyGoE7TshY4ZuVh+T2RVGvJ3o8o/sCtXRr4m4FsQQq0Iv9Xfa9Y0uzbXkjGTY0c7OcgXQTLmT9zPAAACwElEQVR4Xu3URW9cSRRA4dPudpOZOUZmhjDzBJkZJjzMzMzMzMxw/tvotWwpT5amFWk2I+Xb3N1Z1K0qrsI19x2pac+H9ROpA/wnmtUIi6q1lqsRW7x02WnmalNXQqU6Rci8HENy5hE4X9e5YeHlNX1JteGWOGHEajXZxNkubY4SEvTCRQK1XulxwnhF3Q9Pa9E5wjQ3ApFcHZ6ZBNaaUXLny20nNy2PELZgiQ7kM18dIQyNANw4MyNKxk0dI2onV+ruy1tRFQEua9cq8m/Q6R2wbrRlI7PQOXPGdTpQDptjZFC+xUAurE5pHWzTvGWwtFFvPpc9WFaqv8IeE70QmV9GpdZv0j7o13ujpBP6LAw1qlZFswZv15XAmHYP9dfoMa3vuEv3UFytbTClp9Kka7XnoNa/XrT91n8Lxo/qTuAOffSiGUXv36Z5H/Kk3g8FR/VueE7boxUGjteFQ+GlvKhfxWBjnoHmewp14dmLWsf1pSZfgyl9AIqLTJXxoPaMFpOhoeszrLMr8SGgRbV+W/nD+siicX0MenQvRHN0PizXA8QnLCyYu5RZBDbn6RNAlbqvGEp09IhWxHiq0Joy2KrT0KTPpBnUXWQJDuo0UJDSkufhpHYl9IU4O/ZqBfCFboWXtBXadTBbsF8vAa/q4UPAGwbejLP4LfVtgoM8Hod39F3e04Y0EF5GOBhbopPAB7oe4IyaOgOTCfUj+LhBx4iu1cL8T1bopblvORzs0JoCaNHtUYBPtaSJaGu16md0l6qd+RVq4edbtLGAWTgHwIieAE7pGIF4o4nzG77Uwxd01/5M9+thndBvNPlt1u/rgn4HjOv3ZEw2GDjWdPoH1WRrkeq+yI9qamf2D3bVgJXATyd+ZsbqyoTjv8Sgd3fSg7/x+x9a9Sf8tWb332QHQ+WEwToyWHAoBhDp5f/gmn8Ard3CvkoCRlIAAAAASUVORK5CYII=);
+
+    background-repeat: no-repeat;
+    background-size: 80px 30px;
+    height: 30px;
+    position:absolute;
+	top:20%;
+
+    width: 80px;
+
+}
