@@ -215,11 +215,11 @@ ol.odddrop {
 .dropdown-content {
   display: none;
   position: relative;
-  left: 35%x;
-  background-color: #000000c2;
-  min-width: 1500px;
-  box-shadow: -0 0 43px 47px #000000c2;
-  z-index: 1;
+  left: -19%x;
+  background-color: #0f0f0fe0;
+  min-width: 950px;
+  box-shadow: -0 0 30px 125px #0f0f0fe0;
+  z-index: 10;
   border-radius:25px;
 }
 
