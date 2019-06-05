@@ -189,9 +189,7 @@ ol.odddrop {
    position: absolute;
    top: 50%;
    left: 50%;
-
    transform: translate(-50%, -50%) rotate(90deg);
-
    color: white;
  }
 
@@ -218,7 +216,7 @@ ol.odddrop {
   left: -19%x;
   background-color: #0f0f0fe0;
   min-width: 950px;
-  box-shadow: -0 0 30px 125px #0f0f0fe0;
+  box-shadow: -0 0 30px 950px #0f0f0fe0;
   z-index: 10;
   border-radius:25px;
 }
@@ -238,3 +236,58 @@ ol.odddrop {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #52a75300;} 
+
+
+/* drop */
+
+.hexdrop {
+  position: relative;
+  margin: 1em auto;
+  width: 6rem;
+  height: 10.2rem;
+  background: #99b3ff;
+  transform: rotate(-90deg);
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 4.61538rem;
+  transition: all 150ms ease-in-out;
+  z-index: 2;
+
+}
+
+.hexdrop:before, .hexdrop:after {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+  z-index: -1;
+
+}
+
+.hexdrop:before {
+  transform: rotate(60deg);
+}
+
+.hexdrop:after {
+  transform: rotate(-60deg);
+}
+
+.hexdrop:hover {
+  background: #52a753;
+  cursor: pointer;  
+ /*transform: rotate(-60deg); */  /*Rotaciona o hexagono*//
+  transition: 0.5s;
+}
+
+/*Icon*/
+
+
+.hexicon:hover {
+	cursor: pointer;
+	transition: 0.10s;
+	width: 115px;
+	height: 115px;
+ /* transform: rotate(-30deg); */  /*Rotaciona o icone*//
+}
