@@ -252,7 +252,6 @@ ol.odddrop {
   margin-right: 4.61538rem;
   transition: all 150ms ease-in-out;
   z-index: 2;
-
 }
 
 .hexdrop:before, .hexdrop:after {
@@ -263,7 +262,6 @@ ol.odddrop {
   background: inherit;
   content: '';
   z-index: -1;
-
 }
 
 .hexdrop:before {
@@ -282,8 +280,6 @@ ol.odddrop {
 }
 
 /*Icon*/
-
-
 .hexicon:hover {
 	cursor: pointer;
 	transition: 0.10s;
