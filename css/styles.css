@@ -24,12 +24,7 @@ body {
   background: 0;
   color: #52a753;
 }
-.header img {
-  float: left;
-  position:absolute;
-	top:2%;
-	left:3%;
-}
+
 
  
  .flip-box {
