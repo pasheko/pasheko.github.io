@@ -128,14 +128,23 @@ color: white;
 /* Footer */
 .footer {
 	text-align: center;
-	background: #333;
+  background-color: #4444446D;
 	position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
+   height: 71px;
    color: white;
    text-align: center;
 }
+
+.footer svg {
+margin-top: 13px;
+}
+
+
+
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -172,6 +181,8 @@ color: white;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
+
+
 /* tiles */
 
 
@@ -194,6 +205,22 @@ color: white;
   top:0%;
   bottom:0%;
   margin-bottom:8px;
+}
+
+#png {
+		  height:33.34%;
+  width:33.34%;	
+  position:static;
+  top:0%;
+  bottom:0%;
+  margin-bottom:8px;
+ -webkit-filter: grayscale(100%) 
+          brightness(1000%)
+          contrast(120%);
+}
+
+#png:hover {
+  -webkit-filter: none;
 }
 
 #tl{
