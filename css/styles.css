@@ -208,19 +208,18 @@ margin-top: 13px;
 }
 
 #png {
-		  height:33.34%;
+  height:33.34%;
   width:33.34%;	
   position:static;
   top:0%;
   bottom:0%;
   margin-bottom:8px;
- -webkit-filter: grayscale(100%) 
-          brightness(1000%)
-          contrast(120%);
+  -webkit-filter: grayscale(100%) brightness(1000%) contrast(0%); 
 }
 
 #png:hover {
-  -webkit-filter: none;
+  -webkit-filter:none;
+  filter: drop-shadow(5px 5px 4px #000);
 }
 
 #tl{
