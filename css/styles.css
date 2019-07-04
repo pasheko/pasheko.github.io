@@ -1,374 +1,353 @@
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box
 }
 
-/* Style the body */
 body {
-  font-family: Calibri light, Helvetica, sans-serif;
-  margin: 0;
+    font-family: Calibri light, Helvetica, sans-serif;
+    margin: 0
 }
 
-/* body .a {
-	position: absolute;
-	overflow: hidden;
-	z-index: -1;
-	margin: 0px;
-	width: 1440px;
-	height: 782px;} */
-
-/* Header/logo Title */
 .header {
-  padding: 3px;
-  text-align: center;
-  background: 0;
-  color: #52a753;
+    padding: 3px;
+    text-align: center;
+    background: 0;
+    color: #52a753
 }
 
-
- 
- .flip-box {
-  background-color: transparent;
-  width: 134px;
-  height: 45px;
-  perspective: 1000px;
-  margin-left: 47%;
+.flip-box {
+    background-color: transparent;
+    width: 134px;
+    height: 45px;
+    perspective: 1000px;
+    margin-left: 47%
 }
 
 .flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .8s;
+    transform-style: preserve-3d
 }
 
 .flip-box:hover .flip-box-inner {
-  transform: rotateX(180deg);
+    transform: rotateX(180deg)
 }
 
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+.flip-box-back,
+.flip-box-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden
 }
 
 .flip-box-front {
- 
-  color: black;
+    color: #000
 }
 
 .flip-box-back {
-  background-color: #000000 ;
-  color: white;
-  transform: rotateX(180deg);
+    background-color: #000;
+    color: #fff;
+    transform: rotateX(180deg)
 }
 
-
-
-
-/* Increase the font size of the heading */
 .header h1 {
-  font-size: 30px;
+    font-size: 30px
 }
 
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
-  overflow: hidden;
-  background-color: #4444446D;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+    overflow: hidden;
+    background-color: #4444446D;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0
 }
 
-/* Style the navigation bar links */
 .navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none
 }
 
-
-/* Right-aligned link */
 .navbar a.right {
-  float: right;
+    float: right
 }
 
-/* Change color on hover */
 .navbar a:hover {
-  background-color: #52a753;
-  color: white;
+    background-color: #52a753;
+    color: #fff
 }
 
-/* Active/current link */
 .navbar a.active {
-  background-color: #ffffff;
-  color: black;
+    background-color: #fff;
+    color: #000
 }
 
-/* Main column */
-.main {   
--ms-flex: 70%;
-flex: 70%;
-background-color: 0;
-padding: 10px;
-margin-bottom: 10px;
-margin-top: 70px;
-margin-left: 35%;
-color: white;
-
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    margin-left: 35%;
+    color: #fff
 }
 
-
-/* Footer */
 .footer {
-	text-align: center;
-  background-color: #4444446D;
-	position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 71px;
-   color: white;
-   text-align: center;
+    text-align: center;
+    background-color: #4444446D;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 71px;
+    color: #fff;
+    text-align: center
 }
 
 .footer svg {
-margin-top: 13px;
+    margin-top: 13px
 }
 
-
-
-
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
+#svgintelbras {
+    -webkit-filter: grayscale(100%) brightness(1000%) contrast(0)
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
+#svgintelbras:hover {
+    -webkit-filter: none
 }
 
+@media screen and (max-width:700px) {
+    .row {
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width:400px) {
+    .navbar a {
+        float: none;
+        width: 100%
+    }
+}
 
 .header-logo-default {
-
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAeCAMAAACMnWmDAAACOlBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9Oi5STAAAAvXRSTlMAHOMEArYG5/j3CvsDDPb6KNv+JAGqjbH9/Mx79PNK4SnNX4M9xjdd+WCYFNKhy1YYtX9ZkdzxQ3XQSQ5zIBvqKjC45cUsHqmcDXRhEbymD6JaZegFTKyllZnYeIDaI/Xe68fp0zziCXInJS5Fl+2CiNQdIu6EjESLwHarVGbROKTCyXlizrKabyGoE7TshY4ZuVh+T2RVGvJ3o8o/sCtXRr4m4FsQQq0Iv9Xfa9Y0uzbXkjGTY0c7OcgXQTLmT9zPAAACwElEQVR4Xu3URW9cSRRA4dPudpOZOUZmhjDzBJkZJjzMzMzMzMxw/tvotWwpT5amFWk2I+Xb3N1Z1K0qrsI19x2pac+H9ROpA/wnmtUIi6q1lqsRW7x02WnmalNXQqU6Rci8HENy5hE4X9e5YeHlNX1JteGWOGHEajXZxNkubY4SEvTCRQK1XulxwnhF3Q9Pa9E5wjQ3ApFcHZ6ZBNaaUXLny20nNy2PELZgiQ7kM18dIQyNANw4MyNKxk0dI2onV+ruy1tRFQEua9cq8m/Q6R2wbrRlI7PQOXPGdTpQDptjZFC+xUAurE5pHWzTvGWwtFFvPpc9WFaqv8IeE70QmV9GpdZv0j7o13ujpBP6LAw1qlZFswZv15XAmHYP9dfoMa3vuEv3UFytbTClp9Kka7XnoNa/XrT91n8Lxo/qTuAOffSiGUXv36Z5H/Kk3g8FR/VueE7boxUGjteFQ+GlvKhfxWBjnoHmewp14dmLWsf1pSZfgyl9AIqLTJXxoPaMFpOhoeszrLMr8SGgRbV+W/nD+siicX0MenQvRHN0PizXA8QnLCyYu5RZBDbn6RNAlbqvGEp09IhWxHiq0Joy2KrT0KTPpBnUXWQJDuo0UJDSkufhpHYl9IU4O/ZqBfCFboWXtBXadTBbsF8vAa/q4UPAGwbejLP4LfVtgoM8Hod39F3e04Y0EF5GOBhbopPAB7oe4IyaOgOTCfUj+LhBx4iu1cL8T1bopblvORzs0JoCaNHtUYBPtaSJaGu16md0l6qd+RVq4edbtLGAWTgHwIieAE7pGIF4o4nzG77Uwxd01/5M9+thndBvNPlt1u/rgn4HjOv3ZEw2GDjWdPoH1WRrkeq+yI9qamf2D3bVgJXATyd+ZsbqyoTjv8Sgd3fSg7/x+x9a9Sf8tWb332QHQ+WEwToyWHAoBhDp5f/gmn8Ard3CvkoCRlIAAAAASUVORK5CYII=);
-
     background-repeat: no-repeat;
     background-size: 80px 30px;
     height: 30px;
-    position:absolute;
-	top:20%;
-
-    width: 80px;
-
+    position: absolute;
+    top: 20%;
+    width: 80px
 }
 
 .logo {
-  opacity: 0.0;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+    opacity: 0
 }
-
-
-
-/* tiles */
-
-
 
 #container {
-  height:40%;
-  width:30%;
-  margin:auto;
-  position: absolute;
-  top:30%;
- /* left:30%; */
-  background:#44444424;
-
+    height: 40%;
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    background: #44444424
 }
 
-#icon  {
-  height:33.34%;
-  width:33.34%;	
-  position:static;
-  top:0%;
-  bottom:0%;
-  margin-bottom:8px;
+#icon {
+    height: 33.34%;
+    width: 33.34%;
+    position: static;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 8px
 }
 
 #png {
-  height:33.34%;
-  width:33.34%;	
-  position:static;
-  top:0%;
-  bottom:0%;
-  margin-bottom:8px;
-  -webkit-filter: grayscale(100%) brightness(1000%) contrast(0%); 
+    height: 33.34%;
+    width: 33.34%;
+    position: static;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 8px;
+    -webkit-filter: grayscale(100%) brightness(1000%) contrast(0)
 }
 
 #png:hover {
-  -webkit-filter:none;
-  filter: drop-shadow(5px 5px 4px #000);
+    -webkit-filter: none;
+    filter: drop-shadow(5px 5px 4px #000)
 }
 
-#tl{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;
-  top:0%;
-  left:0%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+#tl {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
-#tc{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;
-  top:0%;
-  left:33.34%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+
+#tc {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 0;
+    left: 33.34%;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
-#tr{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;
-  top:0%;
-  left:66.67%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+
+#tr {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 0;
+    left: 66.67%;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
-#ml{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;  
-  top:33.34%;
-  left:0%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+
+#ml {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 33.34%;
+    left: 0;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
-#mc{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;  
-  top:33.34%;
-  left:33.34%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+
+#mc {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 33.34%;
+    left: 33.34%;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
-#mr{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;  
-  top:33.34%;
-  left:66.67%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+
+#mr {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 33.34%;
+    left: 66.67%;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
-#bl{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;  
-  top:66.67%;
-  left:0%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+
+#bl {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 66.67%;
+    left: 0;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
-#bc{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;  
-  top:66.67%;
-  left:33.34%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+
+#bc {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 66.67%;
+    left: 33.34%;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
-#br{
-  height:33.34%;
-  width:33.34%;
-  position:absolute;  
-  top:66.67%;
-  left:66.67%;
-  background:#44444424;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+
+#br {
+    height: 33.34%;
+    width: 33.34%;
+    position: absolute;
+    top: 66.67%;
+    left: 66.67%;
+    background: #44444424;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
+
 div p {
-  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
-  color:#FFFFFF;
-  font-weight:bold;
-  text-align:center;
-  position:relative;
-  font-size:50px;
-  top:30%;
-  margin:0px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    top: 30%;
+    margin: 0
 }
+
 #tl:hover {
-  top:-1.56%;
-  left:-1.11%;
-  transition:all ease .35s;
+    top: -1.56%;
+    left: -1.11%;
+    transition: all ease .35s
 }
+
 #tc:hover {
-  top:-1.56%;
-  left:32.22%;
-  transition:all ease .35s;
+    top: -1.56%;
+    left: 32.22%;
+    transition: all ease .35s
 }
+
 #tr:hover {
-  top:-1.56%;
-  left:65.56%;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+    top: -1.56%;
+    left: 65.56%;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
+
 #ml:hover {
-  top:31.78%;
-  left:-1.11%;
-  transition:all ease .35s;
+    top: 31.78%;
+    left: -1.11%;
+    transition: all ease .35s
 }
+
 #mc:hover {
-  top:31.78%;
-  left:32.22%;
-  transition:all ease .35s;
+    top: 31.78%;
+    left: 32.22%;
+    transition: all ease .35s
 }
+
 #mr:hover {
-  top:31.78%;
-  left:65.56%;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s
+    top: 31.78%;
+    left: 65.56%;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
+
 #bl:hover {
-  top:65.11%;
-  left:-1.11%;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+    top: 65.11%;
+    left: -1.11%;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
+
 #bc:hover {
-  top:65.11%;
-  left:32.22%;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+    top: 65.11%;
+    left: 32.22%;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
+
 #br:hover {
-  top:65.11%;
-  left:65.56%;
-  box-shadow:5px 7px 0px 0px #66000000;
-  transition:all ease .35s;
+    top: 65.11%;
+    left: 65.56%;
+    box-shadow: 5px 7px 0 0 #66000000;
+    transition: all ease .35s
 }
